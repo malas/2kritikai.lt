@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic&subset=all);
+
+html, body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 1vw 3vw;
+    font-size: 16px;
+}
+h1 { font-size: 2em; }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: lowercase;
+}
+a {
+    color: #d43b1d;
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+a:hover, a:active, a:focus {
+    color: #f1a799;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header { 
+    border-bottom: #cbcbcb 1px solid;
+}
+header .site-meta {
+    display: inline-block;
+}
+header h1 { 
+    font-size: 1.5em; 
+    margin: 0 0 5px 0;
+}
+header h2 { 
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 0.8em; 
+    font-style: normal;
+    margin: 0;
+}
+header nav {
+    display: block;
+    float: none;
+    text-align: left;
+}
+header nav ul { 
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+}
+header nav ul li { 
+    display: inline-block;
+}
+
+article h1 {
+    margin-bottom : 0;
+}
+article h2.post-date {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-style: normal;
+    font-size: 0.8em;
+    margin-bottom: 2.5em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+blockquote {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    text-transform: none;
+}
+
+textarea {
+    width: 100%;
+    min-height: 350px;
+}
+
+.fb-page {
+    float: none;
+}
+
+@media (min-width: 768px){
+    body {
+        font-size: 1.6vw;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    header { 
+        padding: 0 0 20px 0;
+    }
+
+    .fb-page {
+        float: right;
+    }
+
+    header nav {
+        display: inline-block;
+        float: right;
+        text-align: right;
+    }
+
+    .top-articles {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .top-articles article {
+        flex: 0 0 46%;
+    }
+
+    .top-articles h1 { font-size: 1.4em; }
+}
